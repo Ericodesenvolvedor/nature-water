@@ -1,0 +1,51 @@
+footer {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2rem;
+}
+
+footer > p {
+    color: #4C4C4C;
+}
+
+footer > div {
+    display: flex;
+    gap: 32px;
+}
+
+:where(.links, .social) {
+    display: flex;
+    gap: 16px;  
+}
+
+.links a,
+.social a {
+    color: #4C4C4C;
+}
+
+@media screen and (max-width: 600px) {
+    footer {
+        margin-top: 4rem;
+        flex-direction: column;
+        justify-content: initial;
+    }  
+
+    footer > p {
+        order: 10;
+    }
+    
+    footer > div {
+        flex-direction: column;
+        gap: 1rem;
+        margin-bottom: 1rem;
+    }
+    
+    :where(.links, .social) {
+        display: flex;
+        gap: 16px;  
+    }
+    
+    .social a {
+        color: #4C4C4C;
+    }
+}

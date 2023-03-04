@@ -1,0 +1,28 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: #FCFBFF;
+    font-size: 1.6rem;
+    font-family: 'Roboto Slab', serif;
+}
+
+.container {
+    padding: 4rem 2rem;
+    max-width: 1204px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        max-width: 630px;
+    }
+}
